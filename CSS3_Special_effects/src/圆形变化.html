@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style>
+    .yxdh {
+        width: 200px;
+        height: 200px;
+        border: 1px solid red;
+        background-color: red;
+        transform: translate(400px, 0px);
+        -webkit-transform: translate(400px, 0px);
+        border-radius: 100px;
+        -moz-border-radius: 100px;
+        -webkit-border-radius: 100px;
+        animation-name: dh;
+        animation-duration: 1s;
+        animation-iteration-count: infinite;
+        animation-timing-function: ease-in-out;
+        -webkit-animation-name: dh;
+        -webkit-animation-duration: 1s;
+        -webkit-animation-iteration-count: infinite;
+        -webkit-animation-timing-function: ease-in-out;
+        margin: 100px auto;
+    }
+    
+    @keyframes dh {
+        0% {
+            transform: scale(0);
+            opacity: 100;
+            -webkit-transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+            -webkit-transform: scale(1);
+        }
+    }
+    
+    @-webkit-keyframes dh {
+        0% {
+            transform: scale(0);
+            opacity: 100;
+            -webkit-transform: scale(0);
+        }
+        100% {
+            transform: scale(1);
+            opacity: 0;
+            -webkit-transform: scale(1);
+        }
+    }
+    </style>
+</head>
+
+<body>
+    <div class="yxdh"></div>
+</body>
+
+</html>
